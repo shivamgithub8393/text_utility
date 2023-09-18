@@ -1,9 +1,13 @@
-Steps to run the application
+# Steps to run the application
 
-open cmd then go to the prject folder and type cd backend
+- open cmd then go to the project folder and type commadn 
+  - cd backend
 
-Run this commadn to activate python virtualenv 
+- create virtualenv and activate it
+  - virtualenv venv
+  - source venv/bin/activate [linux]  or venv\Scripts\activate [windows]
 
-Sfter activating virtualenv run server.py using command
-python server.py 
-server.py is running on port 5000 
+- After activating virtualenv run server.py using command
+   - python server.py 
+
+NOTE : server.py is running on port 5000 

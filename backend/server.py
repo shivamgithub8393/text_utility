@@ -16,14 +16,16 @@ def home():
         try:
             input_1 = request.args.get('input_1')
             input_2 = request.args.get('input_2')
-            print("input_1: " + input_1, "input_2: " + input_2)
+            domain_selected = request.args.get('domain_selected')
+            
+            print("input_1: " + input_1, "input_2: " + input_2, " domain_selected : " + domain_selected)
             
             # append data into excel file
             # Specify the Workbook
             wb_append = load_workbook("output.xlsx")
             
             sheet = wb_append.active
-            row = (input_1, input_2, datetime.today())
+            row = (input_1, input_2, domain_selected, datetime.today())
             sheet.append(row)
             
             #Saving the data in our sample workbook/sheet
