@@ -1,6 +1,6 @@
 # Steps to run the application
 
-- open cmd then go to the project folder and type commadn 
+- open cmd then go to the project folder and type command 
   - cd backend
 
 - create virtualenv and activate it
