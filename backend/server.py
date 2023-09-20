@@ -35,7 +35,7 @@ def home():
         except PermissionError:
             return jsonify({'status': "error", 'data': "Output file is open. First close it and try again"})
         except:
-            return jsonify({'status': "error", 'data': "something went wrong"})
+            return jsonify({'status': "error", 'data': "Something went wrong"})
   
 # driver function
 if __name__ == '__main__':
