@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS, cross_origin
-import pandas as pd
 from openpyxl import load_workbook, Workbook
 from datetime import datetime
 
@@ -38,7 +37,7 @@ def home():
             row = (input_1, input_2, domain_selected, datetime.today())
             sheet.append(row)
             
-            #Saving the data in our sample workbook/sheet
+            # Saving the data in our sample workbook/sheet
             wb_append.save('../output_files/'+ output_file_name + '.xlsx')
     
             return jsonify({'status': "success", 'data': "hello world"})

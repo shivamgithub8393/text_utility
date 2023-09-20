@@ -39,6 +39,8 @@ function ShowSelection2() {
 function clearSelection() {
   $("#selected1").text('')
   $("#selected2").text('')
+  $('#res_error').text("");
+  $('#res_success').text("");
 }
 
 function submitSelected() {
